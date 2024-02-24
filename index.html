@@ -13,10 +13,11 @@
       integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
       crossorigin="anonymous"
     />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
     <div class="wrapper fade-in">
-      <header>
+      <header class="mt-10">
         <nav class="navbar">
           <div class="brand">
             <img src="./img/Logo-pequeño.jpg" alt="Logo" />
@@ -27,6 +28,114 @@
             <li><a href="#technology">Tecnología</a></li>
             <li><a href="#contact">Contacto</a></li>
           </ul>
+          <button class="md:hidden" id="boton-oculto">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+            >
+              <path fill="#ffffff" d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z" />
+            </svg>
+          </button>
+          <div
+            id="menu-oculto"
+            class="hidden absolute top-0 right-0 w-screen h-screen bg-[#00ff7f]/75 z-50"
+          >
+            <button class="md:hidden absolute top-2 right-2" id="boton-cerrar">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="none"
+                  stroke="#ffffff"
+                  stroke-linecap="round"
+                  stroke-width="2"
+                  d="M17 17L7 7m10 0L7 17"
+                />
+              </svg>
+            </button>
+            <ul class="flex flex-col h-full justify-center items-start ml-12">
+              <li
+                class="flex justify-center items-center gap-2 flex-1 text-4xl"
+              >
+                <button onclick="cerrarMenuOculto()">
+                  <a
+                    href="#about"
+                    class="flex justify-center items-center gap-2 flex-1 text-4xl"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="100"
+                      height="100"
+                      viewBox="0 0 24 24"
+                    >
+                      <path fill="#ffffff" d="M4 21V9l8-6l8 6v12h-6v-7h-4v7z" />
+                    </svg>
+                    HOME
+                  </a>
+                </button>
+              </li>
+
+              <li
+                class="flex justify-center items-center gap-2 flex-1 text-4xl"
+              >
+                <button onclick="cerrarMenuOculto()">
+                  <a
+                    href="#technology"
+                    class="flex justify-center items-center gap-2 flex-1 text-4xl"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="100"
+                      height="100"
+                      viewBox="0 0 24 24"
+                    >
+                      <g fill="none">
+                        <path
+                          stroke="#ffffff"
+                          stroke-width="1.5"
+                          d="M2 14c0-3.771 0-5.657 1.172-6.828C4.343 6 6.229 6 10 6h4c3.771 0 5.657 0 6.828 1.172C22 8.343 22 10.229 22 14c0 3.771 0 5.657-1.172 6.828C19.657 22 17.771 22 14 22h-4c-3.771 0-5.657 0-6.828-1.172C2 19.657 2 17.771 2 14Zm14-8c0-1.886 0-2.828-.586-3.414C14.828 2 13.886 2 12 2c-1.886 0-2.828 0-3.414.586C8 3.172 8 4.114 8 6"
+                        />
+                        <path
+                          fill="#ffffff"
+                          d="M17 9a1 1 0 1 1-2 0a1 1 0 0 1 2 0M9 9a1 1 0 1 1-2 0a1 1 0 0 1 2 0"
+                        />
+                      </g>
+                    </svg>
+                    TECNOLOGÌAS
+                  </a>
+                </button>
+              </li>
+
+              <li
+                class="flex justify-center items-center gap-2 flex-1 text-4xl"
+              >
+                <button onclick="cerrarMenuOculto()">
+                  <a
+                    href="#contact"
+                    class="flex justify-center items-center gap-2 flex-1 text-4xl"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="100"
+                      height="100"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="#ffffff"
+                        d="M20 15.5a11.36 11.36 0 0 1-3.57-.57a1 1 0 0 0-1 .25l-2.2 2.2a15.1 15.1 0 0 1-6.59-6.59l2.2-2.2a1 1 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 4a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1a17 17 0 0 0 17 17a1 1 0 0 0 1-1v-3.5a1 1 0 0 0-1-1M5 5h1.54A12.54 12.54 0 0 0 7 7.59L5.79 8.8A15 15 0 0 1 5 5m14 14a15 15 0 0 1-3.8-.76L16.41 17a12.31 12.31 0 0 0 2.59.45m-4-6.01l-3.71-3.7l1.42-1.42L15 8.59l5.29-5.3l1.42 1.42Z"
+                      />
+                    </svg>
+                    CONTACTO
+                  </a>
+                </button>
+              </li>
+            </ul>
+          </div>
         </nav>
       </header>
 
@@ -37,7 +146,6 @@
             Me llamo Manuel Fernández y aquí podrás conocer más sobre mí y mi
             trabajo.
           </p>
-          <!-- Especifica el nombre del archivo en el atributo href -->
           <a download href="./curriculum.pdf">
             <button class="download-cv">Descargar CV</button>
           </a>
@@ -66,53 +174,74 @@
         </div>
       </section>
 
-      <section id="technology" class="technology fade-in visible">
-        <h2>Tecnologías</h2>
-        <swiper-container
-          class="mySwiper"
-          pagination="true"
-          pagination-clickable="true"
-          slides-per-view="2"
-          space-between="30"
-          free-mode="true"
-          autoplay
-        >
-          <swiper-slide>
-            <img
-              class="img"
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
-              alt="CSS"
-            />
-          </swiper-slide>
-          <swiper-slide>
-            <img
-              class="img"
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
-              alt="HTML"
-            />
-          </swiper-slide>
-          <swiper-slide>
-            <img
-              class="img"
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg"
-              alt="PHP"
-            />
-          </swiper-slide>
-          <swiper-slide>
-            <img class="img" src="./img/shell.png" alt="Shell" />
-          </swiper-slide>
-          <swiper-slide>
-            <img class="img" src="./img/c.png" alt="C" />
-          </swiper-slide>
-          <swiper-slide>
-            <img
-              class="img"
-              src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"
-              alt="MySQL"
-            />
-          </swiper-slide>
-        </swiper-container>
-      </section>
+      <div class="technology" id="technology">
+        <h2 class="text-3xl font-bold text-center mb-8">Tecnologías</h2>
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
+            <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+                <img
+                    class="img w-full h-auto object-cover transform hover:scale-110 transition duration-300"
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
+                    alt="CSS"
+                />
+                <div class="p-4">
+                    <p class="text-white text-center font-semibold">CSS</p>
+                </div>
+            </div>
+            <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+                <img
+                    class="img w-full h-auto object-cover transform hover:scale-110 transition duration-300"
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
+                    alt="HTML"
+                />
+                <div class="p-4">
+                    <p class="text-white text-center font-semibold">HTML</p>
+                </div>
+            </div>
+            <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+                <img
+                    class="img w-full h-auto object-cover transform hover:scale-110 transition duration-300"
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg"
+                    alt="PHP"
+                />
+                <div class="p-4">
+                    <p class="text-white text-center font-semibold">PHP</p>
+                </div>
+            </div>
+            <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+                <img
+                    class="img w-full h-auto object-cover transform hover:scale-110 transition duration-300"
+                    src="./img/shell.png"
+                    alt="Shell"
+                />
+                <div class="p-4">
+                    <p class="text-white text-center font-semibold">Shell</p>
+                </div>
+            </div>
+            <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+                <img
+                    class="img w-full h-auto object-cover transform hover:scale-110 transition duration-300"
+                    src="./img/c.png"
+                    alt="C"
+                />
+                <div class="p-4">
+                    <p class="text-white text-center font-semibold">C</p>
+                </div>
+            </div>
+            <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+                <img
+                    class="img w-full h-auto object-cover transform hover:scale-110 transition duration-300"
+                    src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"
+                    alt="MySQL"
+                />
+                <div class="p-4">
+                    <p class="text-white text-center font-semibold">MySQL</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    </div>
+    
 
       <section id="contact" class="contact fade-in visible">
         <h2>Contacto</h2>
@@ -139,18 +268,8 @@
       <h2>© 2024 Manuel Fernández. Todos los derechos reservados.</h2>
     </article>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <script>
-      // Función para manejar el desplazamiento suave al hacer clic en los enlaces del menú
-      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-        anchor.addEventListener("click", function (e) {
-          e.preventDefault();
-
-          document.querySelector(this.getAttribute("href")).scrollIntoView({
-            behavior: "smooth",
-          });
-        });
-      });
-
       document.addEventListener("DOMContentLoaded", function () {
         const fadeInElements = document.querySelectorAll(".fade-in");
 
@@ -172,8 +291,39 @@
         window.addEventListener("resize", checkFadeIn);
         checkFadeIn(); // Llama a la función para asegurarse de que los elementos visibles se agreguen inicialmente
       });
-    </script>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+
+      const botonOculto = document.querySelector("#boton-oculto");
+      botonOculto.addEventListener("click", () => {
+        const menuOculto = document.querySelector("#menu-oculto");
+        if (menuOculto) {
+          // Verificamos si menuOculto es null
+          menuOculto.classList.toggle("hidden");
+        } else {
+          console.error("El elemento #menu-oculto no se encontró en el DOM.");
+        }
+      });
+      function cerrarMenuOculto() {
+        const menuOculto = document.querySelector("#menu-oculto");
+        if (menuOculto) {
+          // Verificamos si menuOculto es null
+          menuOculto.classList.toggle("hidden");
+        } else {
+          console.error("El elemento #menu-oculto no se encontró en el DOM.");
+        }
+      }
+
+      const botonCerrar = document.querySelector("#boton-cerrar");
+      botonCerrar.addEventListener("click", cerrarMenuOculto);
+    </script>
   </body>
 </html>

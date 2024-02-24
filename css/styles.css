@@ -39,7 +39,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1000;
+  z-index: 10;
   height: 15vh;
   background: rgba(0, 20, 44, 0.8);
 }
@@ -262,4 +262,26 @@ swiper-slide img {
   width: 50%;
   height: 50%;
   object-fit: cover;
+}
+
+.brand img {
+  border: #00cc66 solid 3.5px ;
+  border-radius: 100%;
+}
+
+@media (width<768px) {
+  .menu {
+
+    display: none;
+  }
+  .main  {
+    margin-top: 180px;
+  }
+  button {
+    background-color: transparent;
+  }
+  .navbar {
+    justify-content: space-between;
+    padding-inline: 85px;
+  }
 }
