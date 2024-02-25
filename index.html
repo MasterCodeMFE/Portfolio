@@ -327,12 +327,10 @@
 
       const botonCerrar = document.querySelector("#boton-cerrar");
       botonCerrar.addEventListener("click", cerrarMenuOculto);
-
-      // Importa la función `injectSpeedInsights` del módulo '@vercel/speed-insights'
-    const { injectSpeedInsights } = require('@vercel/speed-insights');
-
-  // Llama a la función `injectSpeedInsights()` para inyectar la funcionalidad de Speed Insights
-  injectSpeedInsights();
     </script>
+    <script>
+      window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
   </body>
 </html>
