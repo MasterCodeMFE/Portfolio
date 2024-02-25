@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="icon" type="image/jpeg" href="./img/Logo-pequeño.jpg" />
+    <link rel="icon" type="image/jpeg" href="./img/Logo-pequeño.jpg" class="animate-border"/>
     <link rel="stylesheet" href="css/styles.css" />
     <link
       rel="stylesheet"
@@ -20,7 +20,7 @@
       <header class="mt-10">
         <nav class="navbar">
           <div class="brand">
-            <img src="./img/Logo-pequeño.jpg" alt="Logo" />
+            <img src="./img/Logo-pequeño.jpg" alt="Logo" class="animate-border" />
           </div>
           <ul class="menu">
             <li><a href="#home" class="active">Inicio</a></li>
@@ -150,11 +150,12 @@
             <button class="download-cv">Descargar CV</button>
           </a>
         </div>
-        <img src="./img/Logo.jpg" alt="Logo" class="logo" />
+        <img src="./img/Logo.jpg" alt="Logo" class="logo" class="animate-border"/>
       </main>
 
       <section id="about" class="about fade-in visible">
         <img
+        class="border-4 border-[#00ff7f] rounded-2xl animate-border"
           src="./img/Manuel-Fernandez.jpg"
           alt="Retrato de Manuel Fernández"
         />
@@ -170,16 +171,15 @@
             En mi tiempo libre, disfruto aprendiendo nuevas habilidades y
             contribuyendo a proyectos de código abierto.
           </p>
-          <button class="download-cv">Leer más</button>
         </div>
       </section>
 
-      <div class="technology" id="technology">
+      <div class="technology p-10 fade-in visible" id="technology">
         <h2 class="text-3xl font-bold text-center mb-8">Tecnologías</h2>
         <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
-            <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+            <div class="bg-gray-800 border-4 border-[#00ff7f] rounded-2xl flex-col pt-3 justify-center items-center  overflow-hidden shadow-lg">
                 <img
-                    class="img w-full h-auto object-cover transform hover:scale-110 transition duration-300"
+                    class="img w-[60%] mx-auto h-auto object-cover transform hover:scale-110 transition duration-300 animate-border"
                     src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
                     alt="CSS"
                 />
@@ -187,9 +187,9 @@
                     <p class="text-white text-center font-semibold">CSS</p>
                 </div>
             </div>
-            <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+            <div class="bg-gray-800 border-4 border-[#00ff7f] rounded-2xl flex-col pt-3 justify-center items-center  overflow-hidden shadow-lg">
                 <img
-                    class="img w-full h-auto object-cover transform hover:scale-110 transition duration-300"
+                    class="img w-[60%] mx-auto h-auto object-cover transform hover:scale-110 transition duration-300 animate-border"
                     src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
                     alt="HTML"
                 />
@@ -197,9 +197,9 @@
                     <p class="text-white text-center font-semibold">HTML</p>
                 </div>
             </div>
-            <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+            <div class="bg-gray-800 border-4 border-[#00ff7f] rounded-2xl flex-col pt-3 justify-center items-center  overflow-hidden shadow-lg">
                 <img
-                    class="img w-full h-auto object-cover transform hover:scale-110 transition duration-300"
+                    class="img w-[60%] mx-auto h-auto object-cover transform hover:scale-110 transition duration-300 animate-border"
                     src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg"
                     alt="PHP"
                 />
@@ -207,19 +207,19 @@
                     <p class="text-white text-center font-semibold">PHP</p>
                 </div>
             </div>
-            <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+            <div class="bg-gray-800 border-4 border-[#00ff7f] rounded-2xl flex-col pt-3 justify-center items-center  overflow-hidden shadow-lg">
                 <img
-                    class="img w-full h-auto object-cover transform hover:scale-110 transition duration-300"
+                    class="img w-[60%] mx-auto h-auto object-cover transform hover:scale-110 transition duration-300 animate-border"
                     src="./img/shell.png"
                     alt="Shell"
                 />
                 <div class="p-4">
-                    <p class="text-white text-center font-semibold">Shell</p>
+                    <p class="text-white text-center font-semibold">SHELL</p>
                 </div>
             </div>
-            <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+            <div class="bg-gray-800 border-4 border-[#00ff7f] rounded-2xl flex-col pt-3 justify-center items-center  overflow-hidden shadow-lg">
                 <img
-                    class="img w-full h-auto object-cover transform hover:scale-110 transition duration-300"
+                    class="img w-[60%] mx-auto h-auto object-cover transform hover:scale-110 transition duration-300 animate-border"
                     src="./img/c.png"
                     alt="C"
                 />
@@ -227,14 +227,14 @@
                     <p class="text-white text-center font-semibold">C</p>
                 </div>
             </div>
-            <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+            <div class="bg-gray-800 border-4 border-[#00ff7f] rounded-2xl flex-col pt-3 justify-center items-center  overflow-hidden shadow-lg">
                 <img
-                    class="img w-full h-auto object-cover transform hover:scale-110 transition duration-300"
+                    class="img w-[60%] mx-auto h-auto object-cover transform hover:scale-110 transition duration-300 animate-border"
                     src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg"
                     alt="MySQL"
                 />
                 <div class="p-4">
-                    <p class="text-white text-center font-semibold">MySQL</p>
+                    <p class="text-white text-center font-semibold">MYSQL</p>
                 </div>
             </div>
         </div>
@@ -243,20 +243,20 @@
     </div>
     
 
-      <section id="contact" class="contact fade-in visible">
+      <section id="contact" class="contact fade-in visible mx-auto">
         <h2>Contacto</h2>
-        <form method="POST" action="">
+        <form>
           <div class="form-group">
             <label for="nombre">Nombre</label>
-            <input type="text" id="nombre" name="nombre" required />
+            <input type="text" id="nombre" name="nombre" class="text-black" required />
           </div>
           <div class="form-group">
             <label for="email">Correo electrónico</label>
-            <input type="email" id="email" name="email" required />
+            <input type="email" id="email" name="email" class="text-black" required />
           </div>
           <div class="form-group">
             <label for="mensaje">Mensaje</label>
-            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+            <textarea id="mensaje" name="mensaje" rows="5" class="text-black resize-none  max-h-52 min-h-52"  required></textarea>
           </div>
           <button type="submit">Enviar</button>
         </form>
@@ -303,11 +303,13 @@
       });
 
       const botonOculto = document.querySelector("#boton-oculto");
+      const body = document.querySelector("body");
       botonOculto.addEventListener("click", () => {
         const menuOculto = document.querySelector("#menu-oculto");
         if (menuOculto) {
           // Verificamos si menuOculto es null
           menuOculto.classList.toggle("hidden");
+          body.classList.toggle("overflow-hidden")
         } else {
           console.error("El elemento #menu-oculto no se encontró en el DOM.");
         }
@@ -317,6 +319,7 @@
         if (menuOculto) {
           // Verificamos si menuOculto es null
           menuOculto.classList.toggle("hidden");
+          body.classList.toggle("overflow-hidden")
         } else {
           console.error("El elemento #menu-oculto no se encontró en el DOM.");
         }
